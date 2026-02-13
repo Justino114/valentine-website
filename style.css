@@ -131,6 +131,10 @@ body {
     /* Prevent text from wrapping */
     min-width: fit-content;
     /* Ensure button is wide enough for text */
+    z-index: 20;
+    /* Keep No button above Yes button so it stays clickable */
+    position: relative;
+    /* Required for z-index to work */
 }
 
 .no-btn:hover {
